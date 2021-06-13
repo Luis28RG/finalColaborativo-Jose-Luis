@@ -22,6 +22,7 @@ Route::get('/alumno/index', [AlumnoController::class,'index'])->name('alumno.ind
 
 Route::get('/alumno/create', [AlumnoController::class,'create'])->name('alumno.create');
 Route::post('/alumno', [AlumnoController::class,'createdata'])->name('alumno.crear');
+Route::get('/alumno/mostrar',[AlumnoController::class,'index'])->name('alumno/mostrar');
 Route::get('/alumno/registro',function () {return view('alumno.formulario');})->name('alumno/formulario');
 
 // Rutas de Genero

@@ -37,10 +37,10 @@
                     <a class="nav-link" href="{{route('genero/formulario')}}">Registrar Genero</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Mostrar Genero</a>
+                    <a class="nav-link" href="{{route('genero/mostrar')}}">Mostrar Genero</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Mostrar Alumnos</a>
+                    <a class="nav-link" href="{{route('alumno/mostrar')}}">Mostrar Alumnos</a>
                 </li>
             </ul>
         </div>

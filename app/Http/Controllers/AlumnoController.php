@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 class AlumnoController extends Controller
 {
 
+    public function index(){
+        $data = DB::table('alumno')
+            ->join("genero", "genero.idgenero","=", "genero.idgenero")
+            ->select('alumno.*', 'genero.genero as genero')
+            ->get();
+        return view('alumno.mostrar', compact('data'));
+    }
     public function createdata(Request $request)
     {
 
